@@ -30,7 +30,7 @@ import com.lexter.comercial.repository.OportunidadeRepository;
 
 @RestController
 @RequestMapping("/oportunidades")
-@CrossOrigin(origins="localhost:4200/")
+@CrossOrigin(origins="http://localhost:4200")
 public class OportunidadesController {
 
 	@Autowired
