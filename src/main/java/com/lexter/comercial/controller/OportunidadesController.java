@@ -57,7 +57,7 @@ public class OportunidadesController {
 		return ResponseEntity.notFound().build();
 	}
 	
-	@PostMapping
+	@PostMapping("aula")
 	@ResponseStatus(HttpStatus.CREATED)
 	private Oportunidade adicionar(@Valid @RequestBody Oportunidade oportunidade) {
 		Optional<Oportunidade>oportunidadeExistente = opr.findByDescricaoAndNomeProspecto(
